@@ -1,0 +1,14 @@
+JORDANS EMAIL - GOAL : FINISH BY JUNE 15TH 
+
+I will get back to you in a ~1 week with a conference that we can submit to.  Like I said, please shoot me an email with any updates on your results, once you are confident something is bug-free.  Even if the results are a little messy, just send them my way so I can check.  Good luck!
+
+The 'To Do list' for a paper:
+(1) Run a Random Forest instead of SVM. I suggest using 40-60 trees in the Forest.  The Forest can measure its own expected error rate as a function of the number of trees, and you should look at that to determine how many trees to use, but 40 trees almost always works well.  
+
+(2) Use at least 1 million training points, and if possible, use around 3 million.  You should test on a testing set that is at least as big as the training set.  
+
+(3) Put the results in a table of AUC values.   Then plot the ROC for the best performing features, and the baseline performance measures)
+
+(4) Compare everything against the concatenated RGB values in a 5x5 mask around each pixel.  
+
+(5) Finally, make a confidence map for some region of the image data.  It should have two plots:  on the left is the original image, with the true panel locations annotated.  On the right, show your confidence map, with the same annotations 
