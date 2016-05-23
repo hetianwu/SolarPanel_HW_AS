@@ -8,7 +8,7 @@ feature.
 MATHWORKS
 ()
 %}
-B = TreeBagger(N,X_train,Y_train,'OOBPrediction','On','Method','classification')
+B = TreeBagger(N,X_train,Y_train,'OOBPrediction','On','Method','classification');
 
 
 [Yfit,scores,stdevs] = predict(B,X_test,Y_test);
